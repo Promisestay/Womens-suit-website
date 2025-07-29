@@ -1,0 +1,416 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: auto;
+  margin: 0%;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #222;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 550;
+  font-size: 0.9rem;
+}
+
+
+nav a:hover {
+   color: #c01a1a;
+}
+.spacer{
+    height: 80px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('img/bck.img.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+.hero .btn-white {
+  background: #fff;
+  color: #000;
+}
+
+.hero .btn-white:hover {
+  background: #f4ebeb;
+}
+
+.hero .btn-transparent {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.hero .btn-transparent:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+h2, h3 {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  color: #c01a1a;
+}
+
+.about {
+  padding: 80px 60px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.about-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text h2 {
+  color: #2d2d2d;
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #2d2d2d;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.inspiration {
+  background: #f9f9f9;
+}
+.categories, .inspiration {
+  padding: 60px;
+  text-align: center;
+}
+
+.category-grid, .inspiration-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.category-item, .inspiration-grid div {
+  background: #fff;
+  padding: px;
+  width: 250px;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-item img, .inspiration-grid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.category-item p, .inspiration-grid p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+.products {
+  padding: 60px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.testimonials, .newsletter {
+  padding: 60px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.newsletter-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer {
+  padding: 40px 60px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-links, .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling 
+section {
+  padding: 80px 40px;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card p {
+  text-align: center;
+  margin-top: 10px;
+}
+*/
+/* Button 
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+*/
+/* Testimonials 
+.testimonials p {
+  font-style: italic;
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Newsletter 
+.newsletter {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.newsletter input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+*/
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero button {
+    display: block;
+    margin: 10px auto;
+  }
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav a {
+    margin: 0 10px;
+  }
+}

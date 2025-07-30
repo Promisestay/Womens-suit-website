@@ -213,6 +213,7 @@ h2, h3 {
 .category-item p, .inspiration-grid p {
   margin-top: 10px;
   font-weight: 500;
+  color: black;
 }
 
 
@@ -244,10 +245,45 @@ h2, h3 {
   margin-bottom: 10px;
 }
 
-.testimonials{
-  background-color: #f0f0f0;
+.product-item p {
+  color: black;
 }
 
+.testimonials{
+  background-color: #f0f0f0f0;
+}
+
+.testimonials p {
+  z-index: 2;
+  position: relative;
+  color: #000;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.testimonials-img{
+  text-align: center;
+  margin: 20px;
+
+}
+.testimonial-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+}
 .newsletter{
   background-color: black;
 }
@@ -259,7 +295,7 @@ h2, h3 {
 }
 .testimonials, .newsletter {
   padding: 60px;
-  text-align: center;
+  text-align: center
 }
 
 .newsletter-form {
